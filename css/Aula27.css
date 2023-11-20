@@ -1,0 +1,7 @@
+
+/*Na tag p, mudei as seguintes características do texto: cor de fundo, tamanho da fonte, adicionei uma borda*/
+p{
+    background-color: brown;
+    font-size: 36px;
+    border: 1px solid blue;
+}

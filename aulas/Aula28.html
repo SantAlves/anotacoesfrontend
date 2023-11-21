@@ -3,19 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Classes,Ids, ordem</title>
+    <link rel="stylesheet" href="../css/Aula28.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>Classes, Ids e ordem dos seletores</h1>
 
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        Classes e ids são atributos de tags do HTML, mas estão diretamente
+        relacionados ao CSS;
+      </li>
+      <li>Podemos especificar elementos específicos com eles;</li>
+      <li>Ids são utilizados para elementos únicos;</li>
+      <li>
+        E classes servem para um ou mais elementos, geralmente utilizadas em
+        conjuntos de elementos;
+      </li>
+      <li>Veremos a utilização dos mesmos nos nossos projetos também;</li>
     </ul>
 
-    <p></p>
+    <h2>Classes</h2>
+
+    <ul>
+      <li>As classes são inseridas através de um atributo de HTML;</li>
+      <li>
+        O valor do atributo é o nome da classe, e também uma escolha nossa; Por
+        exemplo:
+      </li>
+      <li>
+        temos um botão que aparece x vezes no nosso projeto, podemos colocar uma
+        classe btn nele; Ou seja, os padrões de estilo desses botões podem ser
+        transmitidos através desta classe para os demais;
+      </li>
+      <li>O seletor fica:.>nome da classe<>/nome>>/li<</li>
+    </ul>
+
+    <h3>Vamos à prática!</h3>
+
+    <p class="paragrafo1">
+      Estilizado através de uma classe na página de estilo.
+    </p>
+
+    <h2>Ids</h2>
+
+    <ul>
+      <li>Os ids também são atributos do HTML;</li>
+      <li>Podemos escrever qualquer coisa como valor, será o nome do id;</li>
+      <li>
+        Ids são únicos, ou seja, não repetimos o mesmo nome na mesma página;
+      </li>
+      <li>
+        O HTML não nos proíbe disso, mas é uma má prática e deve ser evitada;
+      </li>
+      <li>O seletor fica: #>nome do id<>/nome>>/li<</li>
+    </ul>
+
+    <h3>Vamos à prática!</h3>
+
+    <p id="paragrafo2">Estilizado através de uma classe na página de estilo.</p>
+
+    <h2>Ordem dos seletores</h2>
+
+    <ul>
+      <li>Nós aprendemos sobre o seletor de id e classe;</li>
+      <li>E se a tag estiver com id e uma classe, o que acontece?</li>
+      <li>Como nas maneiras de adicionar CSS, temos também uma ordem;</li>
+      <li>Que é: id > class > seletor de tag;</li>
+      <li>
+        Então o id vai vencer de todos os outros, utilize isso ao seu favor;
+      </li>
+      <li>Regras que não entram em conflito serão aplicadas normalmente;</li>
+    </ul>
+
+    <h3>Vamos à prática!</h3>
+
+    <p id="seletor_id" class="seletor_class">
+      Qual ordem tem prioridade sobre mim?( Aqui há uma class e um Id: logo o Id
+      prevalece sobre a class)
+    </p>
+    <p class="seletor_class">
+      Qual ordem tem prioridade sobre mim?( Aqui há uma class e a tag: logo o
+      class prevalece sobre a tag)
+    </p>
+    <p>Qual ordem tem prioridade sobre mim?(Sem seleção no Css)</p>
+
+    <p class="obs">
+      Obs: Sem comparação de ordem de prioridade com a tag para não entrar em
+      todas as tags "p" do documento.
+    </p>
+
+    <a href="../index.html">Início</a>
   </body>
 </html>

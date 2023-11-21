@@ -1,0 +1,29 @@
+
+/*As classes são selecionas com "." (ponto + nome dado a classe)*/
+.paragrafo1{
+    background-color: brown;
+    font-size: 36px;
+    border: 1px solid blue;
+}
+
+/*As divs são selecionas com "#" (hash + nome dado ao id)*/
+
+#paragrafo2{
+    background-color: blue ; 
+    font-size: 36px;
+    border: 1px solid brown;
+}
+
+.seletor_class{
+    border-bottom: 2px solid blue;
+    border-left: 2px solid green ;
+}
+#seletor_id{
+    border-bottom: 2px solid green;
+    border-left: 2px solid blue ;
+}
+
+.obs{
+    border: 5px solid yellow;
+    color: red;
+}

@@ -3,19 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Cores</title>
+    <link rel="stylesheet" href="../css/Aula29.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>Grupos de cores no CSS</h1>
 
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Em CSS as cores são divididas em grupos, temos:</li>
+      <li>Nomes de cor: como red ou blue, não são muito utilizados;</li>
+      <li>RGB: configuramos as tonalidades de red, green e blue;</li>
+      <li>
+        Hexadecimal: uma união de letras e números que podem criar uma cor, a
+        maneira mais utilizada;
+      </li>
+      <li>
+        HSL: hue, saturation e lightness, mudando estes valores, temos uma cor;
+      </li>
     </ul>
 
-    <p></p>
+    <h2>Nome das cores</h2>
+
+    <ul>
+      <li>
+        Nós utilizamos muito essa maneira até agora, mas em projetos reais não é
+        tão empregada;
+      </li>
+      <li>Pois ela nos limita a apenas as cores com nomes existentes;</li>
+      <li>
+        No mundo real precisamos de mais possibilidades, para não limitar os
+        designers;
+      </li>
+      <li>
+        O nome da cor consiste na utilização do nome real da cor como valor da
+        propriedade;
+      </li>
+    </ul>
+
+    <h3>Vamos à prática!</h3>
+
+    <p class="nome_cor1">Yellow</p>
+    <p class="nome_cor2">Blue</p>
+    <p class="nome_cor3">Red</p>
+    <p class="nome_cor4">Brown</p>
+
+    <h2>Hexadecimal</h2>
+
+    <ul>
+      <li>HEX ou Hexadecimal é a abordagem mais utilizada;</li>
+      <li>Basicamente temos que inserir 6 dígitos, precedidos de uma #;</li>
+      <li>
+        Os dois primeiros representam o tom de vermelho, depois o de verde e por
+        fim o azul;
+      </li>
+      <li>Os valores vão de 0 a 9 e Aa F;</li>
+      <li>0 é o mais escuro e F o mais claro;</li>
+      <li>O valor de #000 é a cor preta e #FFF a cor branca;</li>
+      <li>
+        Se um valor for repetido 6 vezes, podemos escrever a cor de forma mais
+        simples;
+      </li>
+      <li>No caso de #FFFFFF podemos reescrever com #FFF;</li>
+      <li>
+        A mesma coisa vale para #112233, essa cor pode ser escrita como: #123;
+      </li>
+      <li>Esta é uma técnica muito utilizada;</li>
+    </ul>
+
+    <h3>Vamos à prática!</h3>
+
+    <p class="hex1">Cód. hex -> #f65865</p>
+    <p class="hex2">Cód. hex -> #bb1321</p>
+    <p class="hex3">Cód. hex -> #aa0614</p>
+    <p class="hex4">Cód. hex -> #5e030a</p>
+
+    <h2>RGB</h2>
+
+    <ul>
+      <li>RGB significa Red, Green e Blue;</li>
+      <li>
+        Nós precisamos inserir a intensidade de cada com, com valores de 0 a
+        255;
+      </li>
+      <li>0 é o mais escuro e 255 0 mais claro;</li>
+      <li>Aplicamos RGB com a seguinte sintaxe: rgb(0-255, 0-255, 0-255)</li>
+      <li>
+        O primeiro valor representa o vermelho, depois verde e por fim azul;
+      </li>
+      <li>Para criar a cor verde inserimos: rgb(0, 255, 0);</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="rgb1">Red -> (255, 0, 0)</p>
+    <p class="rgb2">Green -> (0, 255, 0)</p>
+    <p class="rgb3">Blue -> (0, 0, 255)</p>
+
+    <h2>RGBA</h2>
+
+    <ul>
+      <li>Podemos criar cores também com o RGBA, A vem de alpha;</li>
+      <li>A alteração dele muda a opacidade da cor;</li>
+      <li>Os valores possíveis são de 0 a 1;</li>
+      <li>Sendo 0 transparente e 1 totalmente visível;</li>
+      <li>A sintaxe é quase a mesma: rgba(0-255, 0-255, 0-255, 0-1)</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="rgba1">Red com alpha -> (255, 0, 0, 0.5)</p>
+    <p class="rgba2">Green com alpha -> (0, 255, 0, 0.3)</p>
+    <p class="rgba3">Blue com alpha -> (0, 0, 255, 0.2)</p>
+
+    <a href="../index.html">Início</a>
   </body>
 </html>

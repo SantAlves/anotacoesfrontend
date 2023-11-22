@@ -1,0 +1,61 @@
+/*Exemplo com o nome das cores*/
+.nome_cor1{
+color: yellow;
+}
+
+.nome_cor2{
+    color: blue;
+}
+
+.nome_cor3{
+    color: red;
+}
+
+.nome_cor4{
+    color: brown;
+}
+
+/*Exemplos com Hexadecimal*/
+
+.hex1{
+    color: #f65865;
+}
+.hex2{
+    color: #bb1321;
+}
+.hex3{
+    color: #aa0614;
+}
+.hex4{
+    color: #5e030a;
+}
+
+/*Exemplos com RGB*/
+
+.rgb1{
+    color: rgb(255, 0, 0);
+    border: 2px solid red;
+}
+.rgb2{
+    color: rgb(0, 255, 0);
+    border: 2px solid green;
+}
+.rgb3{
+    color: rgb(0, 0, 255);
+    border: 2px solid blue;
+}
+
+/*Exemplos de rgba*/
+
+.rgba1{
+    color: rgba(255, 0, 0, 0.5);
+    border-bottom: 2px solid red;
+}
+.rgba2{
+    color: rgba(0, 255, 0, 0.3);
+    border-bottom: 2px solid green;
+}
+.rgba3{
+    color: rgba(0, 0, 255, 0.2);
+    border-bottom: 2px solid blue;
+}

@@ -59,3 +59,16 @@ color: yellow;
     color: rgba(0, 0, 255, 0.2);
     border-bottom: 2px solid blue;
 }
+
+/*Exemplos hsl*/
+
+.hsl1{
+    color: hsl(150, 30%, 50%);
+}
+
+.hsl2{
+    color: hsl(130, 30%, 30%);
+}
+.hsl3{
+    color: hsl(110, 30%, 10%);
+}

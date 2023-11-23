@@ -3,19 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Background</title>
+    <link rel="stylesheet" href="../css/Aula30.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>Mudanças no background</h1>
 
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        Todas as regras que vimos sobre cores podem ser aplicadas em cores de
+        background;
+      </li>
+      <li>A regra é: background-color: "cor";</li>
+      <li>
+        As regras de cor de fundo e cor de fonte podem ser utilizadas juntas;
+      </li>
       <li></li>
       <li></li>
     </ul>
 
-    <p></p>
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="background1">Exemplo 1</p>
+    <p class="background2">Exemplo 1</p>
+
+    <hr />
+
+    <h3>Qual a diferença entre background e background-color?</h3>
+
+    <p>
+      A diferença entre background-color e background no CSS é que
+      background-color serve apenas para definir a cor de fundo de um elemento,
+      enquanto background é uma propriedade abreviada que permite definir várias
+      propriedades relacionadas ao fundo de uma só vez, como imagem, posição,
+      tamanho, repetição, etc12 Por exemplo: /* Colocando uma cor simples de
+      fundo */ body { background-color: lightblue; } /* Colocando uma imagem de
+      fundo com posição e tamanho */ body { background: url(“imagem.jpg”) center
+      center / cover;}
+    </p>
+
+    <hr />
+
+    <h2>Opacidade no background</h2>
+
+    <ul>
+      <li>Podemos alterar a opacidade de uma cor de fundo com CSS;</li>
+      <li>A regra é a opacity;</li>
+      <li>Os valores vão de 0 a 1;</li>
+      <li>Sendo 1 totalmente visível e 0 remove a cor;</li>
+      <li>
+        Com esta regra mudamos também a opacidade dos elementos dentro do
+        elemento que alteramos a opacidade, veremos uma solução depois;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="opa1">Exemplo 1 (opacidade: 0.5)</p>
+    <p class="opa2">Exemplo 2 (opacidade: 0.4)</p>
+    <p class="opa3">Exemplo 3 (opacidade: 0.3)</p>
+    <p class="opa4">Exemplo 4 (opacidade: 0.2)</p>
+    <p class="opa5">Exemplo 5 (opacidade: 0.1)</p>
+
+    <h2>Resolvendo o problema da opacidade</h2>
+
+    <ul>
+      <li>
+        Se você não quer aplicar a opacidade para os elementos filhos, precisa
+        utilizar o RGBA em vez de opacity;
+      </li>
+      <li>
+        Alterando o valor de alpha temos a opacidade colocada apenas na cor de
+        fundo;
+      </li>
+      <li>Então preservamos o conteúdo e alteramos o background;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="opa_pro1">Exemplo 1 (rgba (48, 241, 247, .5))</p>
+    <p class="opa_pro2">Exemplo 2 (rgba (48, 241, 247, .4))</p>
+    <p class="opa_pro3">Exemplo 3 (rgba (48, 241, 247, .3))</p>
+    <p class="opa_pro4">Exemplo 4 (rgba (48, 241, 247, .2))</p>
+    <p class="opa_pro5">Exemplo 5 (rgba (48, 241, 247, .1))</p>
+
+    <p class="obs">
+      Obs: Note que nos exemplos acima, os elementos não mudaram sua opacidade e
+      continuam da mesma cor.
+    </p>
+
+    <div class="linkcentro"><a href="../index.html">Início</a></div>
   </body>
 </html>

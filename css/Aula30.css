@@ -1,0 +1,88 @@
+
+/*Estilizando o background das tags*/
+
+.background1{
+    background-color: #225456;
+    font-size: 32px;
+    border: 2px solid #30f1f8;
+}
+
+.background2{
+    background-color: #30f1f8;
+    font-size: 32px;
+    border: 2px solid #225456;
+}
+
+a{
+    text-decoration: none;
+}
+.linkcentro{ 
+    font-size: 24px;   
+    text-align: center;  
+    
+}
+
+/*Mudando a opacidade do fundo*/
+
+.opa1{
+    border: 2px solid #225456; 
+    font-size: 32px;
+    opacity: 0.5;
+}
+.opa2{
+    border: 2px solid #225456; 
+    font-size: 32px;
+    opacity: 0.4;
+}
+.opa3{
+    border: 2px solid #225456; 
+    font-size: 32px;
+    opacity: 0.3;
+}
+.opa4{
+    border: 2px solid #225456; 
+    font-size: 32px;
+    opacity: 0.2;
+}
+.opa5{
+    border: 2px solid #225456; 
+    font-size: 32px;
+    opacity: 0.1;
+}
+
+/*Resolvendo o problema de opacidade das tags filhas*/
+
+.opa_pro1{
+    background-color: rgba(48, 241, 247, .5);
+    font-size: 32px;
+    border: 2px solid #225456; 
+    color: #000;
+    
+}
+.opa_pro2{
+    background-color: rgba(48, 241, 247, .4);
+    font-size: 32px;
+    border: 2px solid #225456; 
+    color: #000;
+}
+.opa_pro3{
+    background-color: rgba(48, 241, 247, .3);
+    font-size: 32px;
+    border: 2px solid #225456; 
+    color: #000;
+}
+.opa_pro4{
+    background-color: rgba(48, 241, 247, .2);
+    font-size: 32px;
+    border: 2px solid #225456;
+    color: #000; 
+}
+.opa_pro5{
+    background-color: rgba(48, 241, 247, .1);
+    font-size: 32px;
+    border: 2px solid #225456; 
+    color: #000;
+}
+.obs{
+    text-align: center;
+}

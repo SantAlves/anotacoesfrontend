@@ -86,3 +86,40 @@ a{
 .obs{
     text-align: center;
 }
+
+/*Adicionando imagens no background*/
+
+.img-background{
+    background: url(../imagens/backgound\ img.jpg) no-repeat;
+    color: #000;
+    font-size: 24px;
+    padding: 15px;
+    
+}
+
+
+/*Centralizando imagem de background*/
+
+.centralizada, .no-centralizada{
+    background: url(../imagens/centralizada.jpg);
+    height: 400px;
+    width: 400px;
+    color: #fff;
+    
+}
+
+.centralizada{
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+}
+.legenda{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 20px;
+}

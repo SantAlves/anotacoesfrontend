@@ -1,0 +1,43 @@
+
+/*Trabalhando com box model: altura e largura*/
+.width_height{
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    text-align: center;
+}
+
+
+.width_height1{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(106, 106, 156);
+    text-align: center;
+}
+
+/*Trabalhando com box model: padding*/
+.com_padding, .sem_padding{
+    background-color: #990f0f;
+    color: #000;
+    font-size: 34px;
+   
+}
+.com_padding{
+    padding: 30px;
+}
+
+
+/*Trabalhando com box model: Shorthand properties */
+
+.shorthand_properties{
+    background-color: #990f0f;
+    color: #000;
+    font-size: 34px;
+    padding: 25px 15px;
+}
+
+.linkcentro{ 
+    font-size: 24px;   
+    text-align: center;  
+    text-decoration: none;  
+}

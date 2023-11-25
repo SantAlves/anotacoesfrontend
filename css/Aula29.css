@@ -72,3 +72,9 @@ color: yellow;
 .hsl3{
     color: hsl(110, 30%, 10%);
 }
+
+.linkcentro{ 
+    font-size: 24px;   
+    text-align: center;  
+    
+}

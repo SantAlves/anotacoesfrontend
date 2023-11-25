@@ -3,19 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Box model</title>
+    <link rel="stylesheet" href="../css/Aula31.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>Entendendo mais sobre Box model</h1>
 
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Box model é uma entidade que é criada em todo elemento do HTML;</li>
+      <li>
+        Ela consiste em quatro partes: altura e largura, padding, border e
+        margin;
+      </li>
+      <li>Todas elas podem ser alteradas por CSS;</li>
+      <li>Alguns elementos do HTML já vem com valor nestas regras;</li>
       <li></li>
     </ul>
 
-    <p></p>
+    <h2>width(largura) e Height(altura)</h2>
+
+    <ul>
+      <li>A altura e a largura são o core do box model;</li>
+      <li>Estas propriedades consistem no conteúdo do elemento;</li>
+      <li>Podemos alterar as duas e mudar o tamanho do elemento na tela;</li>
+      <li>
+        Alguns elementos do HTML, os block elements, já vem com 100% de largura;
+      </li>
+      <li>Preenchendo a tela toda na horizontal;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="width_height">width: 400px; height: 100px;</p>
+    <p class="width_height1">width: 600px; height: 100px;</p>
+
+    <h2>Padding</h2>
+
+    <ul>
+      <li>
+        Padding é o espaço entre o conteúdo e a borda do elemento, também
+        conhecimento como espaçamento interno;
+      </li>
+      <li>
+        Este recurso é utilizado para criar uma distância entre o conteúdo
+        (texto) e a extremidade do elemento;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="com_padding">Com padding (padding: 30px;)</p>
+    <p class="sem_padding">Sem padding</p>
+
+    <h2>Lados individuais</h2>
+
+    <ul>
+      <li>Podemos adicionar o padding aos lados individuais de um elemento;</li>
+      <li>regra é: padding-*</li>
+      <li>Onde * pode ser: top, left, right ou bottom;</li>
+      <li>
+        Assim teremos valores customizados em cada um dos lados do elemento;
+      </li>
+    </ul>
+
+    <h2>Ordem em que são aplicados</h2>
+
+    <ul>
+      <li>1 padding-top: Define o espaçamento superior.</li>
+      <li>2 padding-right: Define o espaçamento à direita.</li>
+      <li>3 padding-bottom: Define o espaçamento inferior.</li>
+      <li>4 padding-left: Define o espaçamento à esquerda.</li>
+    </ul>
+
+    <h2>Shorthand properties</h2>
+
+    <ul>
+      <li>
+        As propriedades de shorthand nos permitem adicionar padding a todas as
+        direções com uma regra;
+      </li>
+      <li>
+        Apenas precisamos utilizar a regra padding, e configurar top, right,
+        bottom e left nesta ordem;
+      </li>
+      <li>Exemplo: padding: 10px 5px 12px 20px;</li>
+      <li>
+        Esta regra de shorthand pode ser aplicada para outras propriedades, como
+        a margin;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="shorthand_properties">
+      Shorthand properties ( padding: 25px 15px;)
+    </p>
+
+    <div class="linkcentro">
+      <a href="../index.html">Início</a>
+    </div>
   </body>
 </html>

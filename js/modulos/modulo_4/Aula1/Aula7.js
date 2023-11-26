@@ -1,0 +1,1 @@
+alert("Nesta aula tive mais detalhes sobre os bastidores da execução de um código javascript!");

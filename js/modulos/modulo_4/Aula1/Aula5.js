@@ -1,0 +1,1 @@
+alert("Nesta aprendi um pouco mais sobre os critérios para se declarar uma variável");

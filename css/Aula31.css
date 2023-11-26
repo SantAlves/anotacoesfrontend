@@ -41,3 +41,39 @@
     text-align: center;  
     text-decoration: none;  
 }
+
+/*Trabalhando com box model: border-box*/
+
+.com_border_box{
+    background-color: #4e0c0c;
+    color: aliceblue;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.sem_border_box{
+    background-color: #990f0f;
+    color: aliceblue;
+    width: 300px;
+    padding: 20px;
+  
+}
+
+/*Trabalhando com box model: estilo da borda*/
+
+.estilo_borda{
+    border: 5px solid green;
+    padding: 10px;
+}
+
+.estilo_borda2{
+    border: 5px dotted yellow;
+    padding: 10px;
+}
+
+.estilo_borda3{
+    border: 5px double brown;
+    padding: 10px;
+}

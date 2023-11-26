@@ -99,6 +99,92 @@
       Shorthand properties ( padding: 25px 15px;)
     </p>
 
+    <h2>Padding e width</h2>
+
+    <ul>
+      <li>
+        A padding é adicionada a largura do elemento, e isso pode ser um
+        problema;
+      </li>
+      <li>Por exemplo: se precisamos seguir um layout perfeitamente;</li>
+      <li>
+        Um elemento com 200px de width e 25px de padding tem um tamanho total de
+        250px na horizontal;
+      </li>
+      <li>
+        Podemos diminuir a largura do elemento, mas isso dificulta o cálculo
+        também;
+      </li>
+      <li>
+        Isso pode ser resolvido com a regra box-sizing e o valor de border-box,
+        isso faz o elemento respeitar o tamanho que está em width;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="com_border_box">
+      <p>Com border-box</p>
+    </div>
+
+    <div class="sem_border_box">
+      <p>Sem border-box</p>
+    </div>
+
+    <figure>
+      <div>
+        <img src="../imagens/com border-box.png" alt="" />
+      </div>
+      <figcaption>
+        Note que o elemento interno se ajusta para que somado ao padding, dê o
+        tamanho especificado de 300px.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <div>
+        <img src="../imagens/sem border-box.png" alt="" />
+      </div>
+      <figcaption>
+        Note que o elemento interno NÃO se ajusta e seu tamanho interno
+        permanece 300px fazendo com que estrapole o tamanho especifcado
+        somando-se ao padding.
+      </figcaption>
+    </figure>
+
+    <p>
+      Obs: Resumindo, se eu precisar que uma imagem tenha 200px de largura e um
+      espaçamento interno de 10px, para que não haja distorções inesperadas,
+      devo fafzer mudanças no tamanho da caixa(box-sizing) e adicionar o valor
+      border-box(borda da caixa) para ficar padronizado.
+    </p>
+
+    <h2>Border</h2>
+
+    <ul>
+      <li>A borda é o elemento central, fica entre padding e margin;</li>
+      <li>Padding é o espaçamento interno e margin o externo;</li>
+      <li>Geralmente esta regra é utilizado com propósito decorativo;</li>
+      <li>
+        A regra de border é definida em algumas partes: tamanho, aspecto e cor
+        da borda;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="estilo_borda">
+      Mudando a largura(5px), aparência(sólida/solid), cor(verde)
+    </p>
+
+    <p class="estilo_borda2">
+      Mudando a largura(5px), aparência(pontilhada/dotted), cor(amarelo)
+    </p>
+
+    <p class="estilo_borda3">
+      Mudando a largura(5px), aparência(dupla/double), cor(marrom)
+    </p>
+
     <div class="linkcentro">
       <a href="../index.html">Início</a>
     </div>

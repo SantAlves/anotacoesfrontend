@@ -77,3 +77,53 @@
     border: 5px double brown;
     padding: 10px;
 }
+
+/*Trabalhando com box model: borda arredondada*/
+
+.broda_are1{
+    background-color: #4e0c0c;
+    color: aliceblue;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.broda_are2{
+    background-color: #990f0f;
+    color: aliceblue;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+  
+}
+
+/*Trabalhando com box model: adicionando margin*/
+
+.com_margin{
+    background-color: #4e0c0c;
+    color: aliceblue;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px 15px 20px 25px;
+    border-radius: 5px;
+}
+.sem_margin{
+    background-color: #0f4f99;
+    color: aliceblue;
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 7px solid #000;
+    border-top: 7px double #000;
+   
+    
+    
+}
+.margin_visivel{
+    background-color: gray;
+    width: 350px;
+}

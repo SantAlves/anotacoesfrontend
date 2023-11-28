@@ -1,0 +1,32 @@
+
+/*Trabalhando com o alinhamento de textos*/
+
+.alinhado_a_direita{
+    text-align: right;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+.alinhado_a_centro{
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+.alinhado_a_esquerda{
+    text-align: left;
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+.alinhando_filhos{
+    border: 3px solid black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.alinhando_filhos > h2{
+    border-bottom: 3px solid black;
+    
+    
+}

@@ -1,0 +1,20 @@
+
+.dando_espaço3{
+    letter-spacing: 3px;
+}
+
+.dando_espaço5{
+    letter-spacing: 5px;
+}
+
+.dando_espaço7{
+    letter-spacing: 7px;
+}
+
+div, div > a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(5, 75, 36);
+    
+}

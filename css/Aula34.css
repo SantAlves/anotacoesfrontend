@@ -1,0 +1,17 @@
+
+
+.com_underline{
+    text-decoration: underline;
+}
+
+.com_though{
+    text-decoration: line-through;
+}
+
+div, div > a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    
+}

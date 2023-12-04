@@ -3,20 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Display</title>
+    <link rel="stylesheet" href="../css/Aula38.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>Display</h1>
 
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>
+        Em HTML e CSS temos alguns elementos que são considerados de bloco e
+        outros inline;
+      </li>
+      <li>A tag div é um exemplo de block e span um exemplo de inline;</li>
+      <li>
+        Com a regra display podemos mudar este comportamento, ou seja, deixar
+        uma div como inline;
+      </li>
     </ul>
 
-    <p></p>
+    <h3>
+      Mudando as propriedades da tag div de bloco para linha. Vamos ver na
+      prática!
+    </h3>
+
+    <div class="usando_display1">
+      <p>Bloco para linha</p>
+    </div>
+
+    <div class="usando_display2">
+      <p>Bloco para linha</p>
+    </div>
+    <div class="usando_display3">
+      <p>Bloco para linha</p>
+    </div>
+
+    <h3>
+      Mudando as propriedades da tag span de linha para bloco. Vamos ver na
+      prática!
+    </h3>
+
+    <span class="span1">Linha para bloco</span>
+    <span class="span2">Linha para bloco</span>
+    <span class="span3">Linha para bloco</span>
+
+    <h2>Escondendo elementos</h2>
+
+    <ul>
+      <li>Existem situações que precisamos ocultar elementos;</li>
+      <li>Basta adicionar a regra display com o valor de none;</li>
+      <li>Então o elemento não é mais exibido, porém ainda consta no HTML;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <p class="invisivel">Visível apenas a nível de programação!</p>
+
+    <img
+      class="exemplo_display_none"
+      src="../imagens/displayNone.png"
+      alt="Exemplo do display none"
+    />
+
+    <img
+      class="exemplo_display_none_desativado"
+      src="../imagens/displaynonedesativado.png"
+      alt="Exemplo do display none"
+    />
 
     <div class="linkcentro">
       <a href="../index.html">Início</a>

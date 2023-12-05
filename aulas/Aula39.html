@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posições dos elementos</title>
+    <link rel="stylesheet" href="../css/Aula39.css" />
   </head>
   <body>
     <h1>Posições dos elementos no html</h1>
@@ -21,10 +22,68 @@
         Esta regra é essencial quando precisamos mudar onde o elemento deve
         ficar no projeto;
       </li>
-      <li></li>
     </ul>
 
-    <p></p>
+    <h2>Static</h2>
+
+    <ul>
+      <li>O valor de static na position não faz nada com o elemento;</li>
+      <li>
+        Porque este é o valor padrão, ou seja, todo elemento já tem este tipo de
+        position;
+      </li>
+      <li>
+        Outros valores são afetados pelas regras top, left, right e bottom,
+        porém static não;
+      </li>
+      <li>Static apenas segue o fluxo do HTML;</li>
+    </ul>
+
+    <h2>Relative</h2>
+
+    <ul>
+      <li>
+        Com a position configurada como relative temos mais possibilidades que
+        static;
+      </li>
+      <li>
+        Agora as regras top, left, right e bottom, movem o elemento pela tela;
+      </li>
+      <li>O elemento ainda segue o fluxo do HTML;</li>
+      <li>
+        Atenção: normalmente não utilizamos estas regras de posição com
+        relative;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="usando_relative">
+      <span>Usando relative!</span>
+    </div>
+    <p>Possível problema a ser gerado!</p>
+
+    <h2>Absolute</h2>
+
+    <ul>
+      <li>
+        Com o valor de absolute em position, o elemento pode ser movido pela
+        tela toda;
+      </li>
+      <li>Ou seja, quebramos o fluxo do HTML;</li>
+      <li>Esta regra também é afetada por top, left, right e bottom;</li>
+      <li>
+        Posicionar com absolute pode ser uma solução ou um problema, dependendo
+        do ponto de vista;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="usando_absolute">
+      <span>Usando absolute!</span>
+    </div>
+    <p>Possível problema a ser gerado!</p>
 
     <div class="linkcentro">
       <a href="../index.html">Início</a>

@@ -1,0 +1,20 @@
+
+/*Usando relative e entendendo o problema que pode gerar*/
+
+.usando_relative{
+    width: 170px;
+    height: 100px;
+    background-color: brown;
+    color: blanchedalmond;
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+
+.usando_absolute{
+    width: 170px;
+    height: 100px;
+    background-color: rgb(42, 165, 159);
+    color: rgb(14, 13, 13);
+    position: absolute;
+}

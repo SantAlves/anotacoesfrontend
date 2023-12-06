@@ -13,8 +13,80 @@
 
 .usando_absolute{
     width: 170px;
-    height: 100px;
+    height: 70px;
     background-color: rgb(42, 165, 159);
     color: rgb(14, 13, 13);
     position: absolute;
+    left: 200px;
 }
+
+/*Position fixed*/
+
+.fixado{
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    background-color: black;
+    position: fixed;
+    top: 50px;
+    left: 200px;
+    color: #fff;
+    text-align: center;
+}
+
+/*Position sticky*/
+
+.sticky{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(20, 20, 97);
+    background-color: rgb(168, 15, 15);
+    position: sticky;
+    top: 30px;
+    left: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+/*z-index*/
+
+
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border:  2px solid red;
+    position: relative;
+}
+.absolute-1,.absolute-2,.absolute-3{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+
+.absolute-1{
+    top: 0px;
+    left: 0px;
+    background-color: rgb(92, 43, 226);
+    color: #fff;
+    
+    
+}
+.absolute-2{
+    top: 25px;
+    left: 25px;
+    background-color: rgb(72, 15, 126);
+    color: #fff;
+  
+    
+}
+.absolute-3{
+    top: 50px;
+    left: 50px;
+    background-color: rgb(21, 3, 37);
+    color: #fff;
+    
+    
+   
+   
+}
+

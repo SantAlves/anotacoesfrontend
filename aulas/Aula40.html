@@ -3,20 +3,178 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Trabalhando com Flexbox</title>
+    <link rel="stylesheet" href="../css/Aula40.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>O que é flexbox?</h1>
 
     <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li>Flexbox é um valor da propriedade display;</li>
+      <li>
+        Esta é a maneira mais utilizada para acondicionar elementos em um
+        container;
+      </li>
+      <li>
+        Temos diversas regras dentro do flex, veremos nas aulas seguintes;
+      </li>
+      <li>
+        O flex deve ser considerado no elemento pai, e os elementos filhos serão
+        os movimentados;
+      </li>
+      <li>Os elementos filhos também podem ter regras específicas;</li>
     </ul>
 
-    <p></p>
+    <h2>Aplicando flex</h2>
+
+    <ul>
+      <li>Para aplicar o flex vamos precisar de uma estrutura base;</li>
+      <li>Consiste em um container e elementos filhos dentro do container;</li>
+      <li>
+        Colocamos a regra display com o valor de flex no container, e agora os
+        elementos estão seguindo o fluxo do flex;
+      </li>
+      <li>
+        Com flex todos os elementos se comportam parecido com os elementos
+        inline;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="sem_felex">
+      <p>(Sem flex)Exemplo 1</p>
+      <p>(Sem flex)Exemplo 2</p>
+      <p>(Sem flex)Exemplo 3</p>
+      <p>(Sem flex)Exemplo 4</p>
+    </div>
+
+    <div class="com_felex">
+      <p>(Com flex)Exemplo 1</p>
+      <p>(Com flex)Exemplo 2</p>
+      <p>(Com flex)Exemplo 3</p>
+      <p>(Com flex)Exemplo 4</p>
+    </div>
+
+    <p>
+      Note que acima já aparece nosso primeiro desafio ao usar somente "Display:
+      flex"...(corrigido com flex-wrap)
+    </p>
+
+    <h2>Flex direction</h2>
+
+    <ul>
+      <li>Podemos mudar o comportamento inline do flex (chamado de row);</li>
+      <li>
+        Alterando o flex-direction para column, teremos agora os itens se
+        comportando como elementos de bloco;
+      </li>
+      <li>O valor padrão de direction é row;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="com_direction">
+      <span>(Com flex)Exemplo 1</span>
+      <span>(Com flex)Exemplo 2</span>
+      <span>(Com flex)Exemplo 3</span>
+      <span>(Com flex)Exemplo 4</span>
+    </div>
+
+    <h2>Flex wrap</h2>
+
+    <ul>
+      <li>
+        O flex tenta colocar todos os elementos na mesma linha por padrão;
+      </li>
+      <li>Porém há situações que queremos x elementos por linha;</li>
+      <li>
+        Para isso acontecer devemos aplicar a regra flex-wrap com o valor de
+        wrap;
+      </li>
+      <li>
+        Para isso acontecer devemos aplicar a regra flex-wrap com o valor de
+        wrap;
+      </li>
+      <li>Agora as linhas respeitam a largura dos elementos;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="com_felex_wrap">
+      <p class="com_wrap">(Com flex)Exemplo 1</p>
+      <p class="com_wrap">(Com flex)Exemplo 2</p>
+      <p class="com_wrap">(Com flex)Exemplo 3</p>
+      <p class="com_wrap">(Com flex)Exemplo 4</p>
+      <p class="com_wrap">(Com flex)Exemplo 5</p>
+      <p class="com_wrap">(Com flex)Exemplo 6</p>
+      <p class="com_wrap">(Com flex)Exemplo 7</p>
+    </div>
+
+    <p>
+      Obs: Também ultrapassará a aréa delimitada caso o número de itens for
+      maior que a área do quadrado.
+    </p>
+
+    <div class="sem_felex_wrap">
+      <p class="com_wrap">(Com flex)Exemplo 1</p>
+      <p class="com_wrap">(Com flex)Exemplo 2</p>
+      <p class="com_wrap">(Com flex)Exemplo 3</p>
+      <p class="com_wrap">(Com flex)Exemplo 4</p>
+      <p class="com_wrap">(Com flex)Exemplo 5</p>
+      <p class="com_wrap">(Com flex)Exemplo 6</p>
+      <p class="com_wrap">(Com flex)Exemplo 7</p>
+    </div>
+
+    <p>
+      Note que por não ter a propriedade "flex-wrap: wrap" ultrapassa a área
+      delimitada e não faz a quebra automática para aproveitar o espaço
+      restante.
+    </p>
+
+    <h2>Posicionando conteúdo</h2>
+
+    <ul>
+      <li>
+        Com justify-content é possível mudar como o conteúdo é posicionado no
+        eixo horizontal;
+      </li>
+      <li>Temos alguns valores interessantes nesta propriedade;</li>
+      <li>
+        Por exemplo: centralizar os elementos na horizontal, basta colocar o
+        valor de center;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <h3>Center</h3>
+    <div class="center">
+      <div class="box_center"></div>
+      <div class="box_center"></div>
+      <div class="box_center"></div>
+    </div>
+
+    <h3>Space Around</h3>
+    <div class="space_around">
+      <div class="box_space_around"></div>
+      <div class="box_space_around"></div>
+      <div class="box_space_around"></div>
+    </div>
+
+    <h3>Space Between</h3>
+    <div class="space_between">
+      <div class="box_space_between"></div>
+      <div class="box_space_between"></div>
+      <div class="box_space_between"></div>
+    </div>
+
+    <h3>Space End</h3>
+    <div class="space_end">
+      <div class="box_space_end"></div>
+      <div class="box_space_end"></div>
+      <div class="box_space_end"></div>
+    </div>
 
     <div class="linkcentro">
       <a href="../index.html">Início</a>

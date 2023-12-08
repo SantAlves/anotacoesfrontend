@@ -103,3 +103,43 @@
 .space_end{
     justify-content: end;
 }
+
+/*Posição dos elementos na vertical com justify-content: align-itens */
+
+
+.box_center_align,.box_flex_end{
+   width: 50px;
+   height: 50px;
+   background-color: black;
+  
+}
+
+/*se o strecth tiver uma altura estabelecida, não funiona...por isso coloquei separado*/
+
+.box_stretch{
+    width: 50px;
+   height: auto;
+   background-color: black;
+   margin: 3px;
+}
+
+.align_center,.flex_end,.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 2px solid rebeccapurple;
+    /*podemos usar o gap ou margin*/
+    gap: 3px;
+}
+
+.align_center{
+   align-items: center;
+}
+
+.flex_end{
+    align-items: end;
+}
+
+.stretch{
+    align-items: stretch;
+}

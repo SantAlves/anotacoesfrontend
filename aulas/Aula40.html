@@ -222,6 +222,97 @@
 
     <h3>No exemplo de cima já utilizei gap...!</h3>
 
+    <h2>Order</h2>
+
+    <ul>
+      <li>Com a order podemos mudar a ordem dos elementos;</li>
+      <li>Esta propriedade é utilizada nos elementos filhos;</li>
+      <li>
+        Agora começamos com as regras que são aplicadas aos elementos filhos,
+        não ao elemento pai;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="order_container">
+      <div class="order_box" id="ter">(com order)3</div>
+      <div class="order_box" id="pri">(com order)1</div>
+      <div class="order_box" id="seg">(com order)2</div>
+    </div>
+
+    <div class="order_container">
+      <div class="order_box" id="sem_ter">(sem order)3</div>
+      <div class="order_box" id="sem_pri">(sem order)1</div>
+      <div class="order_box" id="sem_seg">(sem order)2</div>
+    </div>
+
+    <h2>Basis</h2>
+
+    <ul>
+      <li>A regra flex-basis configura a largura base do elemento;</li>
+      <li>Nós podemos trabalhar com basis e grow juntas!</li>
+      <li>Grow vai preencher toda a largura que basis deixar vazia;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="basis_container">
+      <div class="box_basis"></div>
+      <div class="box_basis maior"></div>
+      <div class="box_basis"></div>
+    </div>
+
+    <h2>Shrink</h2>
+
+    <ul>
+      <li>Shrink é o oposto de grow;</li>
+      <li>
+        Quando utilizamos precisamos manter o tamanho dos outros elementos,
+        então o elemento do shrink diminui o seu tamanho para manter o dos
+        outros;
+      </li>
+      <li>Nota: usamos esta regra em conjunto de basis e grow;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="shrink_container">
+      <div class="box_shrink"></div>
+      <div class="box_shrink menor_shr"></div>
+      <div class="box_shrink"></div>
+    </div>
+
+    <h2>Flex shorthand</h2>
+    <ul>
+      <li>
+        Utilizando apenas flex conseguimos configurar grow, shrink e basis;
+      </li>
+      <li>Colocamos os valores nesta ordem também;</li>
+      <li>Desta maneira: flex: 2 1 100px;</li>
+      <li>Isso dá ao elemento: grow = 2, shrink = 1 e basis = 100px;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <h2>Auto alinhamento</h2>
+
+    <ul>
+      <li>A regra align-self alinha um elemento diferente dos demais;</li>
+      <li>
+        Podemoccentralizar um elemento enquanto os outros seguem a regra de
+        alinhamento do container;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div class="align_self_container">
+      <div class="box_self"></div>
+      <div class="box_self diferente_self"></div>
+      <div class="box_self diferente_self2"></div>
+    </div>
+
     <div class="linkcentro">
       <a href="../index.html">Início</a>
     </div>

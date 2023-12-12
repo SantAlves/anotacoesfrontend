@@ -143,3 +143,103 @@
 .stretch{
     align-items: stretch;
 }
+
+/*Mudando a ordem com flex*/
+
+.order_container{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 600px;
+    border: 2px solid #000;
+    align-items: center;
+    background-color: rgb(108, 119, 151);
+    margin: 10px;
+}
+
+.order_box{
+    border: 2px solid rgb(47, 11, 179);
+    height: 20px;
+    margin: 5px;
+    width: 300px;
+    text-align: center;   
+}
+
+#ter{
+    order: 3;
+}
+#pri{
+    order: 1;
+}
+#seg{
+    order: 2;
+}
+
+/*usando basis */
+
+.basis_container{
+    display: flex;
+    
+}
+
+.box_basis{
+    flex-basis: 200px;
+    border: 2px solid red;
+    height: 15px;
+    background-color: aqua;
+}
+
+.maior{
+    flex-grow: 1;
+}
+
+/*Exemplos com Shrink*/
+
+
+
+.shrink_container{
+    display: flex;
+}
+
+
+.box_shrink{
+    flex-basis: 250px;
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    width: auto;
+    border: 2px solid rgb(93, 6, 175);
+    height: 15px;
+    background-color: aqua;  
+}
+
+
+.menor_shr{
+   flex-shrink: 2;
+} 
+
+/*Alinhamento automático com: Align self*/
+
+.align_self_container{
+    width: 600px;
+    height: 300px;
+    border: 2px solid rgb(27, 27, 26);
+    display: flex;
+    align-items: end;
+}
+
+.box_self{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(70, 0, 128);
+    background-color: #000;
+}
+
+.diferente_self{
+    align-self: center;
+
+}
+
+.diferente_self2{
+    align-self: flex-start;
+}
+

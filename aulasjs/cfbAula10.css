@@ -1,0 +1,15 @@
+.linkcentro{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-top: 20px;
+  
+    
+}
+div > a{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    
+}

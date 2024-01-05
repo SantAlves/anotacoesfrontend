@@ -185,6 +185,284 @@
       <input type="submit" value="enviar" />
     </form>
 
+    <h2>Atributo selected</h2>
+
+    <ul>
+      <li>
+        Podemos iniciar o nosso input de select com uma opção selecionada;
+      </li>
+      <li>Para isso esta option precisa ter o atributo selected;</li>
+      <li>
+        Abordagem interessante para quando temos uma opção muito provável;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <form action="register.php" method="get">
+      <div>
+        <label>Nome</label>
+        <input type="text" />
+      </div>
+
+      <div>
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+      </div>
+
+      <div>
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+
+      <input type="submit" value="enviar" />
+    </form>
+
+    <h2>Múltiplas seleções</h2>
+
+    <ul>
+      <li>
+        Podemos criar um select que nos permite mais de uma option selecionada;
+      </li>
+      <li>Interessante quando queremos aceitar um ou mais dados;</li>
+      <li>Por exemplo: Opcionais de um carro;</li>
+      <li>Precisamos apenas inserir o atributo multiple na tag select;</li>
+    </ul>
+
+    <h2>Vamos ver na prática!</h2>
+
+    <form action="register.php" method="get">
+      <div>
+        <label>Nome</label>
+        <input type="text" />
+      </div>
+
+      <div>
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+      </div>
+
+      <div>
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+      </div>
+
+      <input type="submit" value="enviar" />
+    </form>
+
+    <h2>Elemento de textarea</h2>
+
+    <ul>
+      <li>A tag textarea é semelhante ao input text;</li>
+      <li>Podemos utilizamos para textos maiores;</li>
+      <li>Por exemplo: A bio do Instagram;</li>
+      <li>
+        Isso nos permite uma área maior para digitar e verificar o texto que
+        digitamos;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <form action="register.php" method="get">
+      <div>
+        <label>Nome</label>
+        <input type="text" />
+      </div>
+
+      <div>
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+      </div>
+
+      <div>
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="sobre">Conte um pouco da sua história: </label>
+        <textarea name="sobre" id="" cols="50" rows="20"></textarea>
+      </div>
+
+      <input type="submit" value="enviar" />
+    </form>
+
+    <h2>Fieldset e legend</h2>
+
+    <ul>
+      <li>Fieldset é uma tag para agrupar inputs;</li>
+      <li>E legend é como uma label, que descreve os inputs agrupados;</li>
+      <li>
+        Utilizamos esta tag para conectar dois ou mais inputs que tenham o mesmo
+        sentido;
+      </li>
+      <li>Por exemplo: nome e sobrenome;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div>
+      <fieldset class="fundo-form">
+        <legend>Informação para cadastro</legend>
+
+        <!--primeira informação-->
+        <label>Nome</label>
+        <input type="text" />
+
+        <!--segunda informação-->
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+
+        <!--primeira informação-->
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+
+        <!--terceira informação-->
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+
+        <!--quarta informação-->
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+
+        <!--quinta informação-->
+        <label for="sobre">Conte um pouco da sua história: </label>
+        <textarea name="sobre" id="" cols="50" rows="20"></textarea>
+      </fieldset>
+    </div>
+
+    <h2>Datalist</h2>
+
+    <ul>
+      <li>Datalist é como um select, porém com um autocomplete;</li>
+      <li>Ou selecionar alguma opção por meio de uma lista;</li>
+      <li>As opções são linkadas por um atributo chamado list;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div>
+      <fieldset class="fundo-form">
+        <legend>Informação para cadastro</legend>
+
+        <!--primeira informação-->
+        <label>Nome</label>
+        <input type="text" />
+
+        <!--segunda informação-->
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+
+        <!--primeira informação-->
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+
+        <!--terceira informação-->
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+
+        <!--quarta informação-->
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+
+        <!--quinta informação-->
+        <label for="sobre">Conte um pouco da sua história: </label>
+        <textarea name="sobre" id="" cols="50" rows="20"></textarea>
+
+        <!--sexta informação-->
+        <div>
+          <label for="tiposDeLivros">Temas de livros favoritos:</label>
+          <input type="text" list="generosFavoritos" name="tiposDeLivros" />
+          <datalist id="generosFavoritos">
+            <option value="Romance"></option>
+            <option value="Terror"></option>
+            <option value="Suspense"></option>
+          </datalist>
+        </div>
+      </fieldset>
+    </div>
+
     <div class="linkcentro">
       <a href="../index.html">Início</a>
     </div>

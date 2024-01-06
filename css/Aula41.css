@@ -8,6 +8,11 @@ div label{
     display:block;
 }
 
+.limpar{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .linkcentro{
     text-align: center;
     color: black;
@@ -26,4 +31,9 @@ div > a{
 
 .fundo-form{
     background-color: bisque;
+}
+
+.radioTest label, 
+.radioTest input  {
+    display: inline-block;
 }

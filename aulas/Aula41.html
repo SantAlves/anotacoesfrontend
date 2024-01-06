@@ -463,6 +463,243 @@
       </fieldset>
     </div>
 
+    <h2>Input para senha</h2>
+
+    <ul>
+      <li>
+        Se nós estamos esperando uma senha do usuário, podemos utilizar a tag
+        input;
+      </li>
+      <li>Porém no atributo type colocaremos password;</li>
+      <li>
+        E então o texto passa a ser exibido com *, para mascarar os dígitos;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div>
+      <fieldset class="fundo-form">
+        <legend>Informação para cadastro</legend>
+
+        <!--primeira informação-->
+        <label>Nome</label>
+        <input type="text" />
+
+        <!--segunda informação-->
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+
+        <!--primeira informação-->
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+
+        <!--terceira informação-->
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+
+        <!--quarta informação-->
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+
+        <!--quinta informação-->
+        <label for="sobre">Conte um pouco da sua história: </label>
+        <textarea name="sobre" id="" cols="50" rows="20"></textarea>
+
+        <!--sexta informação-->
+        <div>
+          <label for="tiposDeLivros">Temas de livros favoritos:</label>
+          <input type="text" list="generosFavoritos" name="tiposDeLivros" />
+          <datalist id="generosFavoritos">
+            <option value="Romance"></option>
+            <option value="Terror"></option>
+            <option value="Suspense"></option>
+          </datalist>
+        </div>
+
+        <!--sétima informação-->
+        <label for="passward">Digite sua senha:</label>
+        <input type="password" name="passward" />
+      </fieldset>
+    </div>
+
+    <h2>Reiniciando o form</h2>
+
+    <ul>
+      <li>Podemos reiniciar todos os campos do form;</li>
+      <li>Isso é feito através de um input do tipo reset;</li>
+      <li>Ele é um botão, que ao ser clicado limpa o form;</li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div>
+      <fieldset class="fundo-form">
+        <legend>Informação para cadastro</legend>
+
+        <!--primeira informação-->
+        <label>Nome</label>
+        <input type="text" />
+
+        <!--segunda informação-->
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+
+        <!--primeira informação-->
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+
+        <!--terceira informação-->
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+
+        <!--quarta informação-->
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+
+        <!--quinta informação-->
+        <label for="sobre">Conte um pouco da sua história: </label>
+        <textarea name="sobre" id="" cols="50" rows="20"></textarea>
+
+        <!--sexta informação-->
+        <div>
+          <label for="tiposDeLivros">Temas de livros favoritos:</label>
+          <input type="text" list="generosFavoritos" name="tiposDeLivros" />
+          <datalist id="generosFavoritos">
+            <option value="Romance"></option>
+            <option value="Terror"></option>
+            <option value="Suspense"></option>
+          </datalist>
+        </div>
+
+        <!--sétima informação-->
+        <label for="passward">Digite sua senha:</label>
+        <input type="password" name="passward" />
+        <input class="limpar" type="reset" value="limpar" />
+        <input type="submit" value="enviar" />
+      </fieldset>
+    </div>
+
+    <h2>Input radio</h2>
+
+    <ul>
+      <li>
+        Este input é utilizado para selecionar apenas uma opção de várias
+        possibilidades;
+      </li>
+      <li>Por exemplo: O modelo do carro que estamos comprando;</li>
+      <li>
+        Não podemos escolher dois, então há a necessidade da decisão entre uma
+        das opções;
+      </li>
+    </ul>
+
+    <h3>Vamos ver na prática!</h3>
+
+    <div>
+      <fieldset class="fundo-form">
+        <legend>Informação para cadastro</legend>
+
+        <!--primeira informação-->
+        <label>Nome</label>
+        <input type="text" />
+
+        <!--segunda informação-->
+        <label for="age">Idade</label>
+        <input type="text" name="age" />
+
+        <!--primeira informação-->
+        <label for="job">Profissão: </label>
+        <select name="job">
+          <option value="programador">Programador</option>
+          <option value="tester">Tester/QA</option>
+          <option value="engenheiro">Eng. de Software</option>
+        </select>
+
+        <!--terceira informação-->
+        <label for="contrato">Você leu os termos do contrato? </label>
+        <select name="contrato">
+          <option value="sim">Sim</option>
+          <option value="nao" selected>Não</option>
+        </select>
+
+        <!--quarta informação-->
+        <label for="dependentes">Número de dependentes: </label>
+        <select name="dependentes" multiple>
+          <option value="0">Nenhum</option>
+          <option value="1">1 dependente</option>
+          <option value="2">2 dependente</option>
+          <option value="3+">3 ou mais dependentes</option>
+        </select>
+
+        <!--quinta informação-->
+        <label for="sobre">Conte um pouco da sua história: </label>
+        <textarea name="sobre" id="" cols="50" rows="20"></textarea>
+
+        <!--sexta informação-->
+        <div>
+          <label for="tiposDeLivros">Temas de livros favoritos:</label>
+          <input type="text" list="generosFavoritos" name="tiposDeLivros" />
+          <datalist id="generosFavoritos">
+            <option value="Romance"></option>
+            <option value="Terror"></option>
+            <option value="Suspense"></option>
+          </datalist>
+        </div>
+
+        <!--sétima informação-->
+        <div>
+          <label for="transporte">Qual seu transporte? </label>
+          <div class="radioTest">
+            <input type="radio" value="carro" name="transporte" />
+            <label for="carro">Carro</label>
+          </div>
+          <div class="radioTest">
+            <input type="radio" value="onibus" name="transporte" />
+            <label for="onibus">Transporte Público</label>
+          </div>
+          <div class="radioTest">
+            <input type="radio" value="moto" name="transporte" />
+            <label for="moto">Moto</label>
+          </div>
+          <div class="radioTest">
+            <input type="radio" value="bicicleta" name="transporte" />
+            <label for="bicicleta">Bicicleta</label>
+          </div>
+        </div>
+
+        <!--oitava informação-->
+        <label for="passward">Digite sua senha:</label>
+        <input type="password" name="passward" />
+        <input class="limpar" type="reset" value="limpar" />
+        <input type="submit" value="enviar" />
+      </fieldset>
+    </div>
+
     <div class="linkcentro">
       <a href="../index.html">Início</a>
     </div>
